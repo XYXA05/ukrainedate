@@ -9,10 +9,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Registration from "./pages/Registration";
 import NotFound from "./pages/NotFound";
-
+import { HelmetProvider } from 'react-helmet-async';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 const queryClient = new QueryClient();
 
 const App = () => (
+  <HelmetProvider>
+  <GoogleAnalytics measurementId="G-04BE3JYN39" />
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -27,6 +30,8 @@ const App = () => (
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
+  </HelmetProvider>
+
 );
 
 createRoot(document.getElementById("root")!).render(<App />);
