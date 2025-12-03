@@ -110,7 +110,7 @@ const DatingBusinessCard = () => {
 
           {/* CTA Button - Enhanced animations */}
           <button
-            onClick={() => (window.location.href = "https://example.com")}
+            onClick={() => (window.location.href = "https://tone.affomelody.com/click?pid=123437&offer_id=266")}
             className="relative inline-flex items-center justify-center px-8 sm:px-12 py-4 sm:py-5 bg-gradient-to-r from-rose-500 via-pink-500 to-rose-500 text-white font-bold text-lg rounded-full hover:shadow-2xl hover:shadow-rose-500/70 transition-all duration-300 transform hover:scale-110 group cursor-pointer"
             style={{
               animation:
